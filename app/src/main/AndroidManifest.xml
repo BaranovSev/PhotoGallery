@@ -24,6 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PhotoPageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/> <!-- Регистрация второго активити + configChanges - самостоятельный обработчик изменений конфигурации -->
         <receiver android:name=".NotificationReceiver"
             android:permission="com.bignerdranch.android.photogallery.PRIVATE"
             android:exported="false">
